@@ -1,0 +1,13 @@
+leakage -> un paradigma (en este caso en SQL lo que seria el DER) 
+donde se leaking (fugando/goteando) el ID como Primary Key de un modelo relacional 
+que necesita ser llevado al modelo de POO Objeto.
+
+ANSI SQL -> lenguaje standard para el lenguaje SQL, usado por Hibernate para la portabilidad entre lenguajes.
+
+JDBC - Java DataBase Connectivity
+JDBC -> se le nombra cuando es la API no la implementacion,
+para la implementacion por lo general se la conoce como JDBC Driver, 
+y cada DB va a tener su propia implementacion de JDBC Driver. 
+
+Java 17+ -> Spring 3.0
+Java 11- -> Spring 2.0

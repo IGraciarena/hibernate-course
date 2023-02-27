@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:hibernate-course
+    username: ${H2-username}
+    password: ${H2-password}
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        ddl-auto: create
+        show_sql: true
+        format_sql: true
+# Show h2 on localhost:8080/h2/hibernate-course
+  h2:
+    console:
+      enabled: true
+      path: /h2/hibernate-course
+# Logging for hibernate queries -> Only for Spring 3.0.2+
+logging:
+  level:
+    org.hibernate.orm.jdbc.bind: trace
+# Spring 2+
+#logging:
+#  level:
+#    org.hibernate.type.descriptor.sql: trace
