@@ -11,3 +11,8 @@ y cada DB va a tener su propia implementacion de JDBC Driver.
 
 Java 17+ -> Spring 3.0
 Java 11- -> Spring 2.0
+
+tips
+1. Si no tengo un constructor en la entidad, java por default crea un constructor sin parametros, vacio.
+	1.1 Si proveo de un constructor, entonces java no provee mas el constructor vacio por default, 
+	    y hibernate lo necesita asi que se lo tenemos que agregar.
